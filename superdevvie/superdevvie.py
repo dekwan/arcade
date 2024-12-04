@@ -18,13 +18,13 @@ pygame.joystick.init()
 pygame.mouse.set_visible(False)
 
 class Buttons:
-    ADMIN_LEFT = 8
-    ADMIN_RIGHT = 9
-    PLAYER_LEFT = 3
-    PLAYER_RIGHT = 4
+    ADMIN_LEFT = 2
+    ADMIN_RIGHT = 5
+    PLAYER_LEFT = 8
+    PLAYER_RIGHT = 3
 
     if sys.platform.startswith('darwin'): # MacOS seems to have different button numbers
-        PLAYER_LEFT = 2
+        PLAYER_LEFT = 9
 
 # [Right, Left, Up, Down]
 class Direction:
